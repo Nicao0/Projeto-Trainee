@@ -1,0 +1,11 @@
+/* src/index.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA; /* Um fundo cinza claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
