@@ -1,0 +1,28 @@
+/* A maior parte do estilo (como .login-container, .btn, .input-field) 
+   já vem do Login.css ou do CSS global. 
+   Aqui colocamos apenas o que é ÚNICO ou DIFERENTE para esta tela.
+*/
+
+.form-subtitle-link {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+    text-align: left; /* O seu protótipo alinha à esquerda */
+    cursor: pointer;
+}
+
+.form-subtitle-link strong {
+    color: #007BFF; /* Azul para destacar o link */
+}
+
+/* Vamos garantir que o formulário de cadastro use todo o espaço 
+   e o texto de termos fique no final.
+*/
+.login-form {
+    margin-top: 30px;
+    flex-grow: 1; /* Faz o formulário crescer e empurrar os termos para baixo */
+}
+
+.terms-text {
+    margin-top: auto; /* Garante que os termos fiquem no final */
+}
