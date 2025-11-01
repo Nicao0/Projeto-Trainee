@@ -1,0 +1,126 @@
+/* Remove o padding do container principal para a lista ir até as bordas */
+.login-container {
+  padding: 0;
+  height: 812px;
+  width: 375px;
+  position: relative; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarefas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  padding-top: 40px; /* Mais espaço no topo por causa da barra de status */
+}
+
+.tarefas-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.perfil-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #888; /* Placeholder da foto */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tarefas-filtros {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 24px;
+  border-bottom: 1px solid #EEE;
+}
+
+.filtro-btn {
+  background: none;
+  border: none;
+  padding: 12px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #888;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.filtro-btn.active {
+  color: #007BFF; /* Azul */
+  font-weight: 700;
+  border-bottom: 2px solid #007BFF;
+}
+
+.tarefas-lista {
+  padding: 24px;
+  overflow-y: auto; /* Permite rolar a lista */
+  flex-grow: 1; /* Faz a lista ocupar o espaço disponível */
+}
+
+.tarefa-card {
+  display: flex;
+  align-items: center;
+  background-color: #F8F9FA; /* Cinza claro do card */
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tarefa-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #AAA;
+  border-radius: 6px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #888;
+}
+
+.tarefa-info {
+  flex-grow: 1;
+}
+
+.tarefa-nome {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.tarefa-prazo {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.fab-btn {
+  /* O botão flutuante */
+  position: absolute;
+  bottom: 40px;
+  width: 56px;
+  height: 56px;
+  background-color: #007BFF; /* Azul */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: 300;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
